@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.header h1 {
+  margin: 0 0 4px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.sub { margin: 0 0 16px 0; color: #94a3b8; }
+.controls .row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.spacer { flex: 1 1 auto; }
+.input {
+  background: #0b1220;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  outline: none;
+}
+.input:focus { border-color: #60a5fa; box-shadow: 0 0 0 3px rgba(96,165,250,.15); }
+.btn {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btn.primary { background: #3b82f6; }
+.btn.success { background: #10b981; }
+.btn.danger { background: #ef4444; }
+.btn.ghost { background: transparent; border-color: #334155; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.table-wrap {
+  overflow: auto;
+  border: 1px solid #334155;
+  border-radius: 10px;
+}
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+#dataTable th, #dataTable td {
+  border-bottom: 1px solid #1f2937;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+#dataTable thead th {
+  position: sticky;
+  top: 0;
+  background: #0b1220;
+  z-index: 1;
+}
+#dataTable tbody tr:hover { background: #0b1220; }
+th.sticky { left: 0; position: sticky; background: #0b1220; z-index: 2; }
+
+.cell-input {
+  width: 100%;
+  background: transparent;
+  border: 1px dashed transparent;
+  color: inherit;
+  padding: 6px 6px;
+  border-radius: 6px;
+}
+.cell-input:focus {
+  outline: none;
+  border-color: #334155;
+  background: #0b1220;
+}
+
+.footer { margin-top: 10px; color: #94a3b8; }
